@@ -7,3 +7,142 @@
 .logo img{
     width: 80px;
 }
+
+body{
+    font-family: serif;
+    color: rgb(37, 37, 148);
+    background-color: rgb(217, 240, 255);
+}
+
+.cards-gallery img{
+    width: 80px;
+    height: 80px;
+}
+
+.site-header{
+    background-color: white;
+    padding: 15px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    gap: 23px;
+}
+
+nav a{
+    color: rgb(37, 37, 148);
+}
+
+.Button{
+    display: inline-block;
+    background-color: rgb(36, 36, 168);
+    color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 10px 19px;
+}
+
+.hero-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 30px 20px;
+}
+
+.hero-banner{
+    background-color: rgb(126, 176, 245);
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.Next-Steps{
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    text-align: center;
+}
+
+.Next-Steps ul{
+    list-style: none;
+}
+
+.Next-Steps ul{
+    margin-bottom: 14px;
+}
+
+.Next-Steps li{
+    margin-top: 14px;
+}
+
+.cards-gallery{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    background-color: rgb(126, 176, 245) ;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.cards{
+    background-color: white;
+    border-radius: 12px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.footer{
+    background-color: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links{
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.footer-links img{
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+}
+
+.design{
+    font-family: cursive;
+}
+
+@media (min-width:768px) {
+    .site-header{
+        flex-direction: row;
+    }
+    .hero-grid{
+        grid-template-columns: 2fr 1fr;
+    }
+    .footer{
+        flex-direction: row;
+    }
+}
+
